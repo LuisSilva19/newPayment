@@ -33,8 +33,7 @@ jobs:
       run: docker compose build
       
     - name: Push To Docker Hub Container Registry
-      run:  |
+      run: |
         docker tag ${{ secrets.DOCKER_USERNAME }}/new_payment:latest ${{ secrets.DOCKER_USERNAME }}/new_payment:${{ github.run_id }}
-
         docker push ${{ secrets.DOCKER_USERNAME }}/new_payment:${{ github.run_id }}
         docker push ${{ secrets.DOCKER_USERNAME }}/new_payment:latest
