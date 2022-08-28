@@ -30,7 +30,7 @@ jobs:
       
     - name: Docker Compose Build 
     - working-directory: .
-      run: docker compose build
+      run: docker image build -t luisstorm/new_payment:latest . 
       
     - name: Push To Docker Hub Container Registry
       run: |
