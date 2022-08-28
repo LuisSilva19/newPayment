@@ -19,5 +19,5 @@ jobs:
         cache: maven
 
     - name: Build Application JAR
-      working-directory: ./newPayment
+      working-directory: .
       run: mvn clean package
