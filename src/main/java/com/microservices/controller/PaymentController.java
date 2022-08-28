@@ -60,12 +60,8 @@ public class PaymentController {
     }
 
     @PatchMapping("/{id}/confirm")
-    @CircuitBreaker(name = "updateOrder", fallbackMethod = "authorizedPaymentWithPendingIntegration")
     public void confirmPayment(@PathVariable("id") Integer id){
         paymentService.confirmStatus(id);
     }
 
-    public void authorizedPaymentWithPendingIntegration(Integer id, Exception e){
-        paymentService.confirmStatus(id, Status.CONFIRMED_WITHOUT_INTEGRATION);
-    }
 }

@@ -1,1 +1,5 @@
+db/MockDBConnection.class
+com/microservices/test.class
+configs/TestConfig.class
 com/microservices/MicroservicesApplicationTests.class
+db/PostgreSQLConfig.class

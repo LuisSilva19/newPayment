@@ -3,7 +3,6 @@ package com.microservices.services;
 import com.microservices.domain.Payment;
 import com.microservices.dto.PaymentDTO;
 import com.microservices.enums.Status;
-import com.microservices.http.OrderClient;
 import com.microservices.repository.PaymentRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -19,7 +18,6 @@ public class PaymentService {
 
     private final PaymentRepository paymentRepository;
     private final ModelMapper modelMapper;
-    private final OrderClient orderCLient;
 
     public Page<PaymentDTO> getAllPayment(Pageable page){
         return paymentRepository
@@ -59,8 +57,6 @@ public class PaymentService {
 
         payment.setStatus(Status.CONFIRMED);
         paymentRepository.save(payment);
-
-        orderCLient.approvePaymentOrder(payment.getId());
     }
 
     public void confirmStatus(Integer id, Status status) {

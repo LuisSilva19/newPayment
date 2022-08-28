@@ -1,1 +1,5 @@
-/home/luis/projects/microservice.payment/src/test/java/com/microservices/MicroservicesApplicationTests.java
+/home/luis/projects/newPayment/src/test/java/com/microservices/MicroservicesApplicationTests.java
+/home/luis/projects/newPayment/src/test/java/db/PostgreSQLConfig.java
+/home/luis/projects/newPayment/src/test/java/configs/TestConfig.java
+/home/luis/projects/newPayment/src/test/java/com/microservices/test.java
+/home/luis/projects/newPayment/src/test/java/db/MockDBConnection.java
