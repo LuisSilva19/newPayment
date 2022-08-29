@@ -20,4 +20,4 @@ jobs:
 
     - name: Build Application JAR
       working-directory: .
-      run: mvn clean DskipTests
+      run: mvn clean -DskipTests
