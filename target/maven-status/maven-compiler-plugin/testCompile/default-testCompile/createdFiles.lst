@@ -1,4 +1,0 @@
-configs/TestConfig.class
-db/MockDBConnection.class
-com/microservices/test.class
-db/PostgreSQLConfig.class

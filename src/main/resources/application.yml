@@ -3,8 +3,8 @@ spring:
     name: payment-ms
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/springbootdb?currentSchema=payment
-    username: luis
-    password: 12345
+    url: jdbc:postgresql://localhost:5432/database_spring?currentSchema=payment
+    username: postgres
+    password: 12345678
   flyway:
     defaultSchema: payment
