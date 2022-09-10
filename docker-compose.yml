@@ -25,8 +25,8 @@ services:
     ports:
       - "8080:8080"
     command: mvn spring-boot:run
-#    depends_on:
-#      - db
+    depends_on:
+      - db
     volumes:
       - "./localenv/db/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql"
     networks:
