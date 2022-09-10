@@ -63,5 +63,4 @@ public class PaymentController {
     public void confirmPayment(@PathVariable("id") Integer id){
         paymentService.confirmStatus(id);
     }
-
 }
